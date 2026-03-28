@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda – dois contatos</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 28rem; margin: 2rem auto; padding: 0 1rem; }
+        fieldset { margin-top: 1.25rem; border: 1px solid #ccc; padding: 1rem; }
+        legend { font-weight: 600; padding: 0 0.5rem; }
+        label { display: block; margin-top: 0.75rem; }
+        input { width: 100%; padding: 0.4rem; margin-top: 0.25rem; box-sizing: border-box; }
+        button { margin-top: 1.25rem; padding: 0.5rem 1rem; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Agenda de contatos</h1>
+    <form action="processar.php" method="post">
+        <fieldset>
+            <legend>Contato 1</legend>
+            <label for="contato1_nome">Nome do Contato 1</label>
+            <input type="text" id="contato1_nome" name="contato1_nome" required maxlength="200">
+
+            <label for="contato1_telefone">Telefone do Contato 1</label>
+            <input type="text" id="contato1_telefone" name="contato1_telefone" required maxlength="30">
+
+            <label for="contato1_email">E-mail do Contato 1</label>
+            <input type="email" id="contato1_email" name="contato1_email" required maxlength="200">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato 2</legend>
+            <label for="contato2_nome">Nome do Contato 2</label>
+            <input type="text" id="contato2_nome" name="contato2_nome" required maxlength="200">
+
+            <label for="contato2_telefone">Telefone do Contato 2</label>
+            <input type="text" id="contato2_telefone" name="contato2_telefone" required maxlength="30">
+
+            <label for="contato2_email">E-mail do Contato 2</label>
+            <input type="email" id="contato2_email" name="contato2_email" required maxlength="200">
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

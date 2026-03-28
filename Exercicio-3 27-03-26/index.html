@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessão – nome e telefone</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 28rem; margin: 2rem auto; padding: 0 1rem; }
+        label { display: block; margin-top: 0.75rem; }
+        input { width: 100%; padding: 0.4rem; margin-top: 0.25rem; box-sizing: border-box; }
+        button { margin-top: 1.25rem; padding: 0.5rem 1rem; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Nome e telefone</h1>
+    <form action="processar.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required maxlength="200" autocomplete="name">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" required maxlength="30" autocomplete="tel">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
